@@ -5,7 +5,7 @@ import javax.jms.MapMessage;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 
-import org.cmpe283.finalproject.db.DBUtil;
+import org.cmpe283.finalproject.db.MongoDBUtil;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
@@ -29,7 +29,7 @@ public class DefaultMessageListener implements MessageListener{
 				row.put(MessageFields.host.toString(), m.getString(MessageFields.host.toString()));
 				row.put(MessageFields.cpuusage.toString(), m.getString(MessageFields.cpuusage.toString()));
 				row.put(MessageFields.memoryusage.toString(), m.getString(MessageFields.memoryusage.toString()));
-				DBUtil.saveCollection(row, "vmstatistics");
+				MongoDBUtil.saveCollection(row, "vmstatistics");
 			} catch (JMSException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

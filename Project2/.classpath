@@ -27,5 +27,7 @@
 	<classpathentry kind="lib" path="vijava2120100824.jar"/>
 	<classpathentry kind="lib" path="wsdl4j.jar"/>
 	<classpathentry kind="lib" path="xml-apis.jar"/>
+	<classpathentry kind="lib" path="/Users/palloabhi/Downloads/apache-activemq-5.9.0/activemq-all-5.9.0.jar"/>
+	<classpathentry kind="lib" path="/Users/palloabhi/Downloads/mysql-connector-java-5.1.27/mysql-connector-java-5.1.27-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

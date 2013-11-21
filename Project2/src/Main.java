@@ -1,7 +1,4 @@
-import java.net.UnknownHostException;
-import java.util.Set;
 
-import com.mongodb.*;
 
 
 
@@ -11,7 +8,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		try {
+		/*try {
 			MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
 			DB db = mongoClient.getDB( "VMStats" );
 			Set<String> colls = db.getCollectionNames();
@@ -23,7 +20,7 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		*/
 		
 		
 	}
